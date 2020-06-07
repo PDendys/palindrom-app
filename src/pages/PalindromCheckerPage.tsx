@@ -1,6 +1,7 @@
 import React from 'react';
 
 import PalindromCheckerForm from 'components/palindrom-checker-form/PalindromCheckerForm';
+import PalindromList from 'components/palindrom-list/PalindromList';
 
 const PalindromCheckerPage: React.FC = () => {
     return (
@@ -13,7 +14,7 @@ const PalindromCheckerPage: React.FC = () => {
                     <PalindromCheckerForm />
                 </div>
                 <div className="col-12 col-md-6">
-                    list here
+                    <PalindromList />
                 </div>
             </div>
         </div>
