@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 import initialList from 'mocked-data/initalList.json';
 
-const palindromSlice = createSlice({
+const palindromeSlice = createSlice({
     name: 'palindrom',
     initialState: {
         list: initialList.items
@@ -14,5 +14,5 @@ const palindromSlice = createSlice({
     }
 });
 
-export const { addItem } = palindromSlice.actions;
-export default palindromSlice.reducer;
+export const { addItem } = palindromeSlice.actions;
+export default palindromeSlice.reducer;

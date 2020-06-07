@@ -1,12 +1,12 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 
-import { IPalindromItem, IStore } from 'types';
+import { IPalindromeItem, IStore } from 'types';
 
 import ListItem from 'components/palindrom-list-item/ListItem';
 
 const PalindromList: React.FC = () => {
-    const palindromList = useSelector((state: IStore) => state.palindrom.list);
+    const palindromeList = useSelector((state: IStore) => state.palindrome.list);
     return (
         <table className="table table-striped table-borderless">
             <thead>
@@ -18,7 +18,7 @@ const PalindromList: React.FC = () => {
             </thead>
             <tbody>
             {
-                palindromList.map((item: IPalindromItem, idx: number) =>
+                palindromeList.map((item: IPalindromeItem, idx: number) =>
                     <ListItem
                         key={idx}
                         idx={idx}

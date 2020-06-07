@@ -1,4 +1,4 @@
-interface IPalindromItem {
+interface IPalindromeItem {
     sentence: string,
     isPalindrome: boolean
 }
@@ -7,17 +7,17 @@ interface IAuthSliceState {
     isAuth: boolean
 }
 
-interface IPalindromSliceState {
-    list: IPalindromItem[]
+interface IPalindromeSliceState {
+    list: IPalindromeItem[]
 }
 
 interface IStore {
     auth: IAuthSliceState,
-    palindrom: IPalindromSliceState
+    palindrome: IPalindromeSliceState
 }
 
 export {
-    IPalindromItem,
-    IPalindromSliceState,
+    IPalindromeItem,
+    IPalindromeSliceState,
     IStore
 }

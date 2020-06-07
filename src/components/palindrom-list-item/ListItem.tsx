@@ -1,10 +1,10 @@
 import React from 'react';
 
-import { IPalindromItem } from 'types';
+import { IPalindromeItem } from 'types';
 
 interface IProps {
     idx: number,
-    item: IPalindromItem
+    item: IPalindromeItem
 }
 
 const ListItem: React.FC<IProps> = ({idx, item}: IProps) => {

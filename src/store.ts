@@ -1,12 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit';
 
 import authSlice from 'slices/AuthSlice';
-import palindromSlice from 'slices/PalindromSlice';
+import palindromeSlice from 'slices/PalindromeSlice';
 
 const store = configureStore({
     reducer: {
         auth: authSlice,
-        palindrom: palindromSlice
+        palindrome: palindromeSlice
     }
 });
 
